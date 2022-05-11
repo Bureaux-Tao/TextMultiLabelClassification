@@ -1,0 +1,599 @@
+ssh://bureaux@180.169.131.147:22/home/bureaux/miniconda3/envs/Keras-base/bin/python -u /home/bureaux/Projects/MultiLabelClassification/train.py
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:4185: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:131: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:133: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2022-05-04 16:50:46.883697: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2022-05-04 16:50:46.893896: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2022-05-04 16:50:47.432141: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559697d33e70 executing computations on platform CUDA. Devices:
+2022-05-04 16:50:47.432201: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Graphics Device, Compute Capability 7.0
+2022-05-04 16:50:47.436045: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400000000 Hz
+2022-05-04 16:50:47.438835: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559697e75570 executing computations on platform Host. Devices:
+2022-05-04 16:50:47.438876: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2022-05-04 16:50:47.440307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties:
+name: Graphics Device major: 7 minor: 0 memoryClockRate(GHz): 1.597
+pciBusID: 0000:3b:00.0
+2022-05-04 16:50:47.440697: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2022-05-04 16:50:47.442690: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2022-05-04 16:50:47.444628: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2022-05-04 16:50:47.445048: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2022-05-04 16:50:47.447473: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2022-05-04 16:50:47.449377: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2022-05-04 16:50:47.454942: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2022-05-04 16:50:47.457428: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2022-05-04 16:50:47.457490: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2022-05-04 16:50:47.459387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-05-04 16:50:47.459416: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0
+2022-05-04 16:50:47.459436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N
+2022-05-04 16:50:47.462321: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30458 MB memory) -> physical GPU (device: 0, name: Graphics Device, pci bus id: 0000:3b:00.0, compute capability: 7.0)
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to
+==================================================================================================
+Input-Token (InputLayer)        (None, None)         0
+__________________________________________________________________________________________________
+Input-Segment (InputLayer)      (None, None)         0
+__________________________________________________________________________________________________
+Embedding-Token (Embedding)     (None, None, 768)    9216000     Input-Token[0][0]
+__________________________________________________________________________________________________
+Embedding-Segment (Embedding)   (None, None, 768)    1536        Input-Segment[0][0]
+__________________________________________________________________________________________________
+Embedding-Token-Segment (Add)   (None, None, 768)    0           Embedding-Token[0][0]
+                                                                 Embedding-Segment[0][0]
+__________________________________________________________________________________________________
+Embedding-Dropout (Dropout)     (None, None, 768)    0           Embedding-Token-Segment[0][0]
+__________________________________________________________________________________________________
+Embedding-Norm (LayerNormalizat (None, None, 768)    0           Embedding-Dropout[0][0]
+__________________________________________________________________________________________________
+Embedding-Rotary-Position (Sinu (None, None, 64)     0           Embedding-Norm[0][0]
+__________________________________________________________________________________________________
+Transformer-0-MultiHeadSelfAtte (None, None, 768)    2359296     Embedding-Norm[0][0]
+                                                                 Embedding-Norm[0][0]
+                                                                 Embedding-Norm[0][0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-0-MultiHeadSelfAtte (None, None, 768)    0           Transformer-0-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-0-MultiHeadSelfAtte (None, None, 768)    0           Embedding-Norm[0][0]
+                                                                 Transformer-0-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-0-MultiHeadSelfAtte (None, None, 768)    0           Transformer-0-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-0-FeedForward (Feed (None, None, 768)    4718592     Transformer-0-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-0-FeedForward-Dropo (None, None, 768)    0           Transformer-0-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-0-FeedForward-Add ( (None, None, 768)    0           Transformer-0-MultiHeadSelfAttent
+                                                                 Transformer-0-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-0-FeedForward-Norm  (None, None, 768)    0           Transformer-0-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-1-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-0-FeedForward-Norm[0]
+                                                                 Transformer-0-FeedForward-Norm[0]
+                                                                 Transformer-0-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-1-MultiHeadSelfAtte (None, None, 768)    0           Transformer-1-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-1-MultiHeadSelfAtte (None, None, 768)    0           Transformer-0-FeedForward-Norm[0]
+                                                                 Transformer-1-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-1-MultiHeadSelfAtte (None, None, 768)    0           Transformer-1-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-1-FeedForward (Feed (None, None, 768)    4718592     Transformer-1-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-1-FeedForward-Dropo (None, None, 768)    0           Transformer-1-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-1-FeedForward-Add ( (None, None, 768)    0           Transformer-1-MultiHeadSelfAttent
+                                                                 Transformer-1-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-1-FeedForward-Norm  (None, None, 768)    0           Transformer-1-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-2-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-1-FeedForward-Norm[0]
+                                                                 Transformer-1-FeedForward-Norm[0]
+                                                                 Transformer-1-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-2-MultiHeadSelfAtte (None, None, 768)    0           Transformer-2-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-2-MultiHeadSelfAtte (None, None, 768)    0           Transformer-1-FeedForward-Norm[0]
+                                                                 Transformer-2-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-2-MultiHeadSelfAtte (None, None, 768)    0           Transformer-2-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-2-FeedForward (Feed (None, None, 768)    4718592     Transformer-2-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-2-FeedForward-Dropo (None, None, 768)    0           Transformer-2-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-2-FeedForward-Add ( (None, None, 768)    0           Transformer-2-MultiHeadSelfAttent
+                                                                 Transformer-2-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-2-FeedForward-Norm  (None, None, 768)    0           Transformer-2-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-3-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-2-FeedForward-Norm[0]
+                                                                 Transformer-2-FeedForward-Norm[0]
+                                                                 Transformer-2-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-3-MultiHeadSelfAtte (None, None, 768)    0           Transformer-3-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-3-MultiHeadSelfAtte (None, None, 768)    0           Transformer-2-FeedForward-Norm[0]
+                                                                 Transformer-3-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-3-MultiHeadSelfAtte (None, None, 768)    0           Transformer-3-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-3-FeedForward (Feed (None, None, 768)    4718592     Transformer-3-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-3-FeedForward-Dropo (None, None, 768)    0           Transformer-3-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-3-FeedForward-Add ( (None, None, 768)    0           Transformer-3-MultiHeadSelfAttent
+                                                                 Transformer-3-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-3-FeedForward-Norm  (None, None, 768)    0           Transformer-3-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-4-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-3-FeedForward-Norm[0]
+                                                                 Transformer-3-FeedForward-Norm[0]
+                                                                 Transformer-3-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-4-MultiHeadSelfAtte (None, None, 768)    0           Transformer-4-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-4-MultiHeadSelfAtte (None, None, 768)    0           Transformer-3-FeedForward-Norm[0]
+                                                                 Transformer-4-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-4-MultiHeadSelfAtte (None, None, 768)    0           Transformer-4-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-4-FeedForward (Feed (None, None, 768)    4718592     Transformer-4-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-4-FeedForward-Dropo (None, None, 768)    0           Transformer-4-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-4-FeedForward-Add ( (None, None, 768)    0           Transformer-4-MultiHeadSelfAttent
+                                                                 Transformer-4-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-4-FeedForward-Norm  (None, None, 768)    0           Transformer-4-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-5-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-4-FeedForward-Norm[0]
+                                                                 Transformer-4-FeedForward-Norm[0]
+                                                                 Transformer-4-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-5-MultiHeadSelfAtte (None, None, 768)    0           Transformer-5-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-5-MultiHeadSelfAtte (None, None, 768)    0           Transformer-4-FeedForward-Norm[0]
+                                                                 Transformer-5-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-5-MultiHeadSelfAtte (None, None, 768)    0           Transformer-5-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-5-FeedForward (Feed (None, None, 768)    4718592     Transformer-5-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-5-FeedForward-Dropo (None, None, 768)    0           Transformer-5-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-5-FeedForward-Add ( (None, None, 768)    0           Transformer-5-MultiHeadSelfAttent
+                                                                 Transformer-5-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-5-FeedForward-Norm  (None, None, 768)    0           Transformer-5-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-6-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-5-FeedForward-Norm[0]
+                                                                 Transformer-5-FeedForward-Norm[0]
+                                                                 Transformer-5-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-6-MultiHeadSelfAtte (None, None, 768)    0           Transformer-6-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-6-MultiHeadSelfAtte (None, None, 768)    0           Transformer-5-FeedForward-Norm[0]
+                                                                 Transformer-6-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-6-MultiHeadSelfAtte (None, None, 768)    0           Transformer-6-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-6-FeedForward (Feed (None, None, 768)    4718592     Transformer-6-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-6-FeedForward-Dropo (None, None, 768)    0           Transformer-6-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-6-FeedForward-Add ( (None, None, 768)    0           Transformer-6-MultiHeadSelfAttent
+                                                                 Transformer-6-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-6-FeedForward-Norm  (None, None, 768)    0           Transformer-6-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-7-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-6-FeedForward-Norm[0]
+                                                                 Transformer-6-FeedForward-Norm[0]
+                                                                 Transformer-6-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-7-MultiHeadSelfAtte (None, None, 768)    0           Transformer-7-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-7-MultiHeadSelfAtte (None, None, 768)    0           Transformer-6-FeedForward-Norm[0]
+                                                                 Transformer-7-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-7-MultiHeadSelfAtte (None, None, 768)    0           Transformer-7-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-7-FeedForward (Feed (None, None, 768)    4718592     Transformer-7-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-7-FeedForward-Dropo (None, None, 768)    0           Transformer-7-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-7-FeedForward-Add ( (None, None, 768)    0           Transformer-7-MultiHeadSelfAttent
+                                                                 Transformer-7-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-7-FeedForward-Norm  (None, None, 768)    0           Transformer-7-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-8-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-7-FeedForward-Norm[0]
+                                                                 Transformer-7-FeedForward-Norm[0]
+                                                                 Transformer-7-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-8-MultiHeadSelfAtte (None, None, 768)    0           Transformer-8-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-8-MultiHeadSelfAtte (None, None, 768)    0           Transformer-7-FeedForward-Norm[0]
+                                                                 Transformer-8-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-8-MultiHeadSelfAtte (None, None, 768)    0           Transformer-8-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-8-FeedForward (Feed (None, None, 768)    4718592     Transformer-8-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-8-FeedForward-Dropo (None, None, 768)    0           Transformer-8-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-8-FeedForward-Add ( (None, None, 768)    0           Transformer-8-MultiHeadSelfAttent
+                                                                 Transformer-8-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-8-FeedForward-Norm  (None, None, 768)    0           Transformer-8-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-9-MultiHeadSelfAtte (None, None, 768)    2359296     Transformer-8-FeedForward-Norm[0]
+                                                                 Transformer-8-FeedForward-Norm[0]
+                                                                 Transformer-8-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-9-MultiHeadSelfAtte (None, None, 768)    0           Transformer-9-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-9-MultiHeadSelfAtte (None, None, 768)    0           Transformer-8-FeedForward-Norm[0]
+                                                                 Transformer-9-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-9-MultiHeadSelfAtte (None, None, 768)    0           Transformer-9-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-9-FeedForward (Feed (None, None, 768)    4718592     Transformer-9-MultiHeadSelfAttent
+__________________________________________________________________________________________________
+Transformer-9-FeedForward-Dropo (None, None, 768)    0           Transformer-9-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-9-FeedForward-Add ( (None, None, 768)    0           Transformer-9-MultiHeadSelfAttent
+                                                                 Transformer-9-FeedForward-Dropout
+__________________________________________________________________________________________________
+Transformer-9-FeedForward-Norm  (None, None, 768)    0           Transformer-9-FeedForward-Add[0][
+__________________________________________________________________________________________________
+Transformer-10-MultiHeadSelfAtt (None, None, 768)    2359296     Transformer-9-FeedForward-Norm[0]
+                                                                 Transformer-9-FeedForward-Norm[0]
+                                                                 Transformer-9-FeedForward-Norm[0]
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-10-MultiHeadSelfAtt (None, None, 768)    0           Transformer-10-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-10-MultiHeadSelfAtt (None, None, 768)    0           Transformer-9-FeedForward-Norm[0]
+                                                                 Transformer-10-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-10-MultiHeadSelfAtt (None, None, 768)    0           Transformer-10-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-10-FeedForward (Fee (None, None, 768)    4718592     Transformer-10-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-10-FeedForward-Drop (None, None, 768)    0           Transformer-10-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-10-FeedForward-Add  (None, None, 768)    0           Transformer-10-MultiHeadSelfAtten
+                                                                 Transformer-10-FeedForward-Dropou
+__________________________________________________________________________________________________
+Transformer-10-FeedForward-Norm (None, None, 768)    0           Transformer-10-FeedForward-Add[0]
+__________________________________________________________________________________________________
+Transformer-11-MultiHeadSelfAtt (None, None, 768)    2359296     Transformer-10-FeedForward-Norm[0
+                                                                 Transformer-10-FeedForward-Norm[0
+                                                                 Transformer-10-FeedForward-Norm[0
+                                                                 Embedding-Rotary-Position[0][0]
+__________________________________________________________________________________________________
+Transformer-11-MultiHeadSelfAtt (None, None, 768)    0           Transformer-11-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-11-MultiHeadSelfAtt (None, None, 768)    0           Transformer-10-FeedForward-Norm[0
+                                                                 Transformer-11-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-11-MultiHeadSelfAtt (None, None, 768)    0           Transformer-11-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-11-FeedForward (Fee (None, None, 768)    4718592     Transformer-11-MultiHeadSelfAtten
+__________________________________________________________________________________________________
+Transformer-11-FeedForward-Drop (None, None, 768)    0           Transformer-11-FeedForward[0][0]
+__________________________________________________________________________________________________
+Transformer-11-FeedForward-Add  (None, None, 768)    0           Transformer-11-MultiHeadSelfAtten
+                                                                 Transformer-11-FeedForward-Dropou
+__________________________________________________________________________________________________
+Transformer-11-FeedForward-Norm (None, None, 768)    0           Transformer-11-FeedForward-Add[0]
+__________________________________________________________________________________________________
+all-token (Lambda)              (None, None, 768)    0           Transformer-11-FeedForward-Norm[0
+__________________________________________________________________________________________________
+conv1d_1 (Conv1D)               (None, None, 256)    590080      all-token[0][0]
+__________________________________________________________________________________________________
+conv1d_2 (Conv1D)               (None, None, 256)    786688      all-token[0][0]
+__________________________________________________________________________________________________
+conv1d_3 (Conv1D)               (None, None, 256)    983296      all-token[0][0]
+__________________________________________________________________________________________________
+global_max_pooling1d_1 (GlobalM (None, 256)          0           conv1d_1[0][0]
+__________________________________________________________________________________________________
+global_max_pooling1d_2 (GlobalM (None, 256)          0           conv1d_2[0][0]
+__________________________________________________________________________________________________
+global_max_pooling1d_3 (GlobalM (None, 256)          0           conv1d_3[0][0]
+__________________________________________________________________________________________________
+cls-token (Lambda)              (None, 768)          0           Transformer-11-FeedForward-Norm[0
+__________________________________________________________________________________________________
+concatenate_1 (Concatenate)     (None, 768)          0           global_max_pooling1d_1[0][0]
+                                                                 global_max_pooling1d_2[0][0]
+                                                                 global_max_pooling1d_3[0][0]
+__________________________________________________________________________________________________
+concatenate_2 (Concatenate)     (None, 1536)         0           cls-token[0][0]
+                                                                 concatenate_1[0][0]
+__________________________________________________________________________________________________
+dropout_13 (Dropout)            (None, 1536)         0           concatenate_2[0][0]
+__________________________________________________________________________________________________
+dense_73 (Dense)                (None, 256)          393472      dropout_13[0][0]
+__________________________________________________________________________________________________
+dense_74 (Dense)                (None, 65)           16705       dense_73[0][0]
+==================================================================================================
+Total params: 96,922,433
+Trainable params: 96,922,433
+Non-trainable params: 0
+__________________________________________________________________________________________________
+WARNING:tensorflow:From /home/bureaux/miniconda3/envs/Keras-base/lib/python3.6/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From /home/bureaux/Projects/MultiLabelClassification/utils/loss.py:34: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+训练文本长度分度
+count    11958.000000
+mean        56.600937
+std         42.626146
+min          1.000000
+25%         26.000000
+50%         38.000000
+75%         77.000000
+max        377.000000
+Name: len, dtype: float64
+训练文本长度分度
+count    1498.000000
+mean       57.767023
+std        44.894441
+min         6.000000
+25%        26.000000
+50%        38.000000
+75%        78.750000
+max       330.000000
+Name: len, dtype: float64
+标签数量： 65
+[['遗憾！四川FC领先86分钟被绝杀，7700名球迷到场助威', [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], ['被约谈后立即召开专题会议整改：济南从严从实抓好大气污染防治', [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], ['天津：嫌疑人在公共场合侮辱国旗，被批准逮捕', [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]]
+Epoch 1/999
+2022-05-04 16:51:16.613336: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2022-05-04 16:51:16.951438: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+187/187 [==============================] - 351s 2s/step - loss: 0.6388 - acc: 0.6758
+1498it [00:29, 51.09it/s]
+acc: 0.7790 best acc: 0.7790
+
+Epoch 2/999
+187/187 [==============================] - 363s 2s/step - loss: 0.0986 - acc: 0.8808
+1498it [00:23, 63.30it/s]
+acc: 0.8765 best acc: 0.8765
+
+Epoch 3/999
+187/187 [==============================] - 360s 2s/step - loss: 0.0729 - acc: 0.9018
+1498it [00:27, 55.34it/s]
+acc: 0.9005 best acc: 0.9005
+
+Epoch 4/999
+187/187 [==============================] - 348s 2s/step - loss: 0.0572 - acc: 0.9144
+1498it [00:26, 57.54it/s]
+acc: 0.9112 best acc: 0.9112
+
+Epoch 5/999
+187/187 [==============================] - 367s 2s/step - loss: 0.0493 - acc: 0.9183
+1498it [00:25, 59.39it/s]
+acc: 0.9192 best acc: 0.9192
+
+Epoch 6/999
+187/187 [==============================] - 360s 2s/step - loss: 0.0417 - acc: 0.9266
+1498it [00:26, 57.47it/s]
+Early stop count 1/5
+acc: 0.9179 best acc: 0.9192
+
+Epoch 7/999
+187/187 [==============================] - 360s 2s/step - loss: 0.0350 - acc: 0.9328
+1498it [00:26, 57.35it/s]
+acc: 0.9219 best acc: 0.9219
+
+Epoch 8/999
+187/187 [==============================] - 362s 2s/step - loss: 0.0287 - acc: 0.9357
+1498it [00:26, 56.38it/s]
+acc: 0.9246 best acc: 0.9246
+
+Epoch 9/999
+187/187 [==============================] - 356s 2s/step - loss: 0.0266 - acc: 0.9375
+1498it [00:26, 56.14it/s]
+Early stop count 1/5
+acc: 0.9239 best acc: 0.9246
+
+Epoch 10/999
+187/187 [==============================] - 359s 2s/step - loss: 0.0240 - acc: 0.9364
+1498it [00:26, 56.71it/s]
+acc: 0.9259 best acc: 0.9259
+
+Epoch 11/999
+187/187 [==============================] - 358s 2s/step - loss: 0.0238 - acc: 0.9398
+1498it [00:26, 55.65it/s]
+acc: 0.9292 best acc: 0.9292
+
+Epoch 12/999
+187/187 [==============================] - 360s 2s/step - loss: 0.0213 - acc: 0.9476
+1498it [00:26, 56.39it/s]
+Early stop count 1/5
+acc: 0.9279 best acc: 0.9292
+
+Epoch 13/999
+187/187 [==============================] - 353s 2s/step - loss: 0.0214 - acc: 0.9388
+1498it [00:25, 57.71it/s]
+Early stop count 2/5
+acc: 0.9279 best acc: 0.9292
+
+Epoch 14/999
+187/187 [==============================] - 361s 2s/step - loss: 0.0177 - acc: 0.9415
+1498it [00:26, 55.65it/s]
+acc: 0.9299 best acc: 0.9299
+
+Epoch 15/999
+187/187 [==============================] - 356s 2s/step - loss: 0.0199 - acc: 0.9416
+1498it [00:24, 60.01it/s]
+Early stop count 1/5
+acc: 0.9272 best acc: 0.9299
+
+Epoch 16/999
+187/187 [==============================] - 357s 2s/step - loss: 0.0193 - acc: 0.9419
+1498it [00:26, 55.61it/s]
+Early stop count 2/5
+acc: 0.9286 best acc: 0.9299
+
+Epoch 17/999
+187/187 [==============================] - 348s 2s/step - loss: 0.0182 - acc: 0.9469
+1498it [00:26, 57.46it/s]
+Early stop count 3/5
+acc: 0.9292 best acc: 0.9299
+
+Epoch 18/999
+187/187 [==============================] - 359s 2s/step - loss: 0.0143 - acc: 0.9481
+1498it [00:27, 55.38it/s]
+acc: 0.9306 best acc: 0.9306
+
+Epoch 19/999
+187/187 [==============================] - 356s 2s/step - loss: 0.0152 - acc: 0.9444
+1498it [00:25, 59.79it/s]
+Early stop count 1/5
+acc: 0.9272 best acc: 0.9306
+
+Epoch 20/999
+187/187 [==============================] - 360s 2s/step - loss: 0.0189 - acc: 0.9423
+1498it [00:26, 56.29it/s]
+Early stop count 2/5
+acc: 0.9266 best acc: 0.9306
+
+Epoch 21/999
+187/187 [==============================] - 359s 2s/step - loss: 0.0163 - acc: 0.9449
+1498it [00:26, 57.33it/s]
+Early stop count 3/5
+acc: 0.9246 best acc: 0.9306
+
+Epoch 22/999
+187/187 [==============================] - 358s 2s/step - loss: 0.0172 - acc: 0.9441
+1498it [00:26, 56.16it/s]
+Early stop count 4/5
+acc: 0.9259 best acc: 0.9306
+
+Epoch 23/999
+187/187 [==============================] - 352s 2s/step - loss: 0.0156 - acc: 0.9493
+1498it [00:27, 54.31it/s]
+Early stop count 5/5
+acc: 0.9252 best acc: 0.9306
+
+Epoch 00023: early stopping
+
+              precision    recall  f1-score   support
+
+       交往-会见     0.9231    1.0000    0.9600        12
+       交往-感谢     1.0000    1.0000    1.0000         8
+       交往-探班     1.0000    0.9000    0.9474        10
+       交往-点赞     0.9091    0.9091    0.9091        11
+       交往-道歉     0.9048    1.0000    0.9500        19
+     产品行为-上映     0.9706    0.9429    0.9565        35
+     产品行为-下架     1.0000    1.0000    1.0000        24
+     产品行为-发布     0.9933    0.9867    0.9900       150
+     产品行为-召回     1.0000    1.0000    1.0000        36
+     产品行为-获奖     0.9375    0.9375    0.9375        16
+     人生-产子/女     0.9375    1.0000    0.9677        15
+       人生-出轨     0.7500    0.7500    0.7500         4
+       人生-分手     1.0000    1.0000    1.0000        15
+       人生-失联     0.9286    0.9286    0.9286        14
+       人生-婚礼     0.8333    0.8333    0.8333         6
+       人生-庆生     1.0000    1.0000    1.0000        16
+       人生-怀孕     1.0000    0.7500    0.8571         8
+       人生-死亡     0.9495    0.8868    0.9171       106
+       人生-求婚     1.0000    1.0000    1.0000         9
+       人生-离婚     0.9706    1.0000    0.9851        33
+       人生-结婚     0.9500    0.8837    0.9157        43
+       人生-订婚     0.8182    1.0000    0.9000         9
+     司法行为-举报     1.0000    1.0000    1.0000        12
+     司法行为-入狱     0.9000    1.0000    0.9474        18
+     司法行为-开庭     0.9333    1.0000    0.9655        14
+     司法行为-拘捕     0.9775    0.9886    0.9831        88
+     司法行为-立案     1.0000    1.0000    1.0000         9
+     司法行为-约谈     0.9697    1.0000    0.9846        32
+     司法行为-罚款     1.0000    1.0000    1.0000        29
+     司法行为-起诉     0.9500    0.9048    0.9268        21
+    灾害/意外-地震     1.0000    1.0000    1.0000        14
+  灾害/意外-坍/垮塌     1.0000    1.0000    1.0000        10
+    灾害/意外-坠机     1.0000    1.0000    1.0000        13
+    灾害/意外-洪灾     1.0000    0.8571    0.9231         7
+    灾害/意外-爆炸     1.0000    0.8889    0.9412         9
+    灾害/意外-袭击     1.0000    0.8750    0.9333        16
+    灾害/意外-起火     0.9630    0.9630    0.9630        27
+    灾害/意外-车祸     0.9444    0.9714    0.9577        35
+     竞赛行为-夺冠     0.8833    0.9464    0.9138        56
+     竞赛行为-晋级     0.8919    1.0000    0.9429        33
+     竞赛行为-禁赛     0.9375    0.9375    0.9375        16
+     竞赛行为-胜负     0.9769    0.9906    0.9837       213
+     竞赛行为-退役     0.8462    1.0000    0.9167        11
+     竞赛行为-退赛     0.8571    1.0000    0.9231        18
+     组织关系-停职     0.9167    1.0000    0.9565        11
+     组织关系-加盟     1.0000    0.9268    0.9620        41
+     组织关系-裁员     1.0000    0.8947    0.9444        19
+     组织关系-解散     0.9091    1.0000    0.9524        10
+     组织关系-解约     0.8333    1.0000    0.9091         5
+     组织关系-解雇     0.8462    0.8462    0.8462        13
+   组织关系-辞/离职     1.0000    0.9859    0.9929        71
+     组织关系-退出     0.9048    0.8636    0.8837        22
+     组织行为-开幕     0.9375    0.9375    0.9375        32
+     组织行为-游行     1.0000    1.0000    1.0000         9
+     组织行为-罢工     1.0000    1.0000    1.0000         8
+     组织行为-闭幕     1.0000    1.0000    1.0000         9
+    财经/交易-上市     0.8750    1.0000    0.9333         7
+ 财经/交易-出售/收购     1.0000    1.0000    1.0000        24
+    财经/交易-加息     1.0000    1.0000    1.0000         3
+    财经/交易-涨价     0.8000    0.8000    0.8000         5
+    财经/交易-涨停     0.9643    1.0000    0.9818        27
+    财经/交易-融资     1.0000    1.0000    1.0000        14
+    财经/交易-跌停     1.0000    1.0000    1.0000        14
+    财经/交易-降价     0.9000    1.0000    0.9474         9
+    财经/交易-降息     1.0000    1.0000    1.0000         4
+
+   micro avg     0.9604    0.9650    0.9627      1657
+   macro avg     0.9491    0.9583    0.9522      1657
+weighted avg     0.9618    0.9650    0.9626      1657
+ samples avg     0.9720    0.9760    0.9693      1657
+
+进程已结束,退出代码0
