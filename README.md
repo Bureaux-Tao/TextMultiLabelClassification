@@ -82,13 +82,13 @@ tqdm==4.61.2
 
 ![](images/downstream.png)
 
-多分类模型变多标签模型最后一层激活函数应由 softmax 变为 sigmoid
+单标签模型变多标签模型最后一层激活函数应由 softmax 变为 sigmoid
 
 ## 策略
 
 - 使用EMA(exponential mobing average)滑动平均配合Adam作为优化策略。滑动平均可以用来估计变量的局部值，是的变量的更新与一段时间内的历史值有关。它的意义在于利用滑动平均的参数来提高模型在测试数据上的健壮性。
   EMA 对每一个待更新训练学习的变量 (variable) 都会维护一个影子变量 (shadow variable)。影子变量的初始值就是这个变量的初始值。
-- BERT模型由于已经有了预训练权重，所以微调权重只需要很小的学习率，而LSTM和GlobalPointer层使用的`he_normal`初始化学习率，需要使用较大学习率，所以本模型使用[分层学习率](https://kexue.fm/archives/6418)
+- BERT模型由于已经有了预训练权重，所以微调权重只需要很小的学习率，而Dense层使用的`he_normal`初始化学习率，需要使用较大学习率，所以本模型使用[分层学习率](https://kexue.fm/archives/6418)
 - 在Embedding层注入扰动，[对抗训练](https://kexue.fm/archives/7234) ，使模型更具鲁棒性。
 
 ## Train
